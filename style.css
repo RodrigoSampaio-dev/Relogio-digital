@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, #3f3f3f, #000000);
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+    flex-direction: column;
+    
+    background-color: white;
+    border: blue solid;
+    border-radius: 10px;
+
+    width: 500px;
+
+    box-shadow: 10px -5px 15px black;
+    background-image: linear-gradient(180deg, #ffffff, #1c03ff);
+}
+
+
+section .relogio{
+    display: flex;
+}
+
+section h1{
+    margin: 20px;
+    text-shadow: rgb(107, 107, 107) 3px 3px 3px;
+}
+
+.relogio h1{
+    margin-left: 50px;
+}
+
+.relogio p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+span{
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.calendario{
+    border: wheat solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    background-color: blue;
+    width: 490px;
+
+    text-align: center;
+}
+
+.data{
+    margin-top: 10px;
+    color: wheat;
+}
+
+.dias{
+    margin-bottom: 10px;
+    color: wheat;
+
+    text-shadow: rgb(107, 107, 107) 3px 3px 3px;
+}
