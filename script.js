@@ -2,7 +2,7 @@ const hrs = document.getElementById("hrs")
 const min = document.getElementById("min")
 const seg = document.getElementById("seg")
 
-const date = document.getElementById("day")
+const date = document.getElementById("dia")
 const mes = document.getElementById("mes")
 const ano = document.getElementById("ano")
 
@@ -19,7 +19,7 @@ setInterval(() =>{
         (currentTime.getSeconds() < 10 ? "0" : "")
         + currentTime.getSeconds();
     
-    day.innerHTML =
+    dia.innerHTML =
         (currentTime.getDate() < 10 ? "0" : "")
         + currentTime.getDate() + " /";
 

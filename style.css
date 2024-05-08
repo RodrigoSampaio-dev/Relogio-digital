@@ -5,8 +5,8 @@
 
 body{
     background-repeat: no-repeat;
-    background-image: linear-gradient(180deg, #3f3f3f, #000000);
-    background-color: black;
+    background-image: linear-gradient(180deg, #b6b6b6, #ff9100);
+    background-color: #ff9100;
     width: 100%;
     height: 100%;
 }
@@ -18,16 +18,20 @@ section{
     margin: 10% auto;
     flex-direction: column;
     
-    background-color: white;
-    border: blue solid;
+    border: black 1px solid;
     border-radius: 10px;
 
     width: 500px;
+    height: 213px;
 
-    box-shadow: 10px -5px 15px black;
-    background-image: linear-gradient(180deg, #ffffff, #1c03ff);
+    box-shadow: 2px 2px 30px 10px black;
+    background-image: linear-gradient(180deg, #b6b6b6, #ff9100);
+    transition: 1s;
 }
 
+section:hover{
+    box-shadow: 2px 2px 30px 10px rgb(255, 255, 255);
+}
 
 section .relogio{
     display: flex;
@@ -35,12 +39,9 @@ section .relogio{
 
 section h1{
     margin: 20px;
-    text-shadow: rgb(107, 107, 107) 3px 3px 3px;
+    text-shadow: rgb(255, 255, 255) 3px 3px 3px;
 }
 
-.relogio h1{
-    margin-left: 50px;
-}
 
 .relogio p{
     text-align: center;
@@ -53,25 +54,67 @@ span{
 }
 
 .calendario{
-    border: wheat solid;
+    border: wheat 2px solid;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 
-    background-color: blue;
+    background-image: linear-gradient(180deg, #cfd6fc, #4400ff);
     width: 490px;
-
-    text-align: center;
 }
 
-.data{
-    margin-top: 10px;
+.data, #dia{
+    margin: 10px 0px 0px 75px;
     color: wheat;
 }
 
-.dias{
+.dias, .data{
     margin-bottom: 10px;
     color: wheat;
 
-    text-shadow: rgb(107, 107, 107) 3px 3px 3px;
+    text-shadow: rgb(0, 0, 0) 3px 3px 3px;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 515px) {
+    section{
+        margin-top: 20%;
+        width: 400px;
+    }
+
+    .data, #dia{
+        margin-left: 25px;
+    }
+
+    .calendario{
+        width: 390px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    section{
+        margin-top: 60%;
+    }
+}
+
+@media only screen and (max-width: 403px) {
+    section{
+        margin-top: 50%;
+        width: 300px;
+        height: 160px;
+    }
+
+    section h1, span, h2{
+        font-size: 15px;
+    }
+
+    .data, #dia{
+        margin-left: 25px;
+    }
+    
+    .calendario{
+        width: 290px;
+    }
+}
+
